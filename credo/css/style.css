@@ -1,0 +1,45 @@
+body{
+    font-family: Calibri,sans-serif;
+}
+span{
+    margin-right: 5px;
+    color: white;
+}
+/*ავტორიზაციის ბლოკი*/
+.loginBlock{
+    min-height: 400px;
+    background: tomato;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: ghostwhite;
+}
+
+.loginForm{
+    margin-top: 10%;
+}
+
+/*რეგისტრაციის ბლოკი*/
+.registerBlock{
+    min-height: 400px;
+    background: tomato;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: ghostwhite;
+}
+.registerForm{
+    margin-top: 10%;
+}
+
+/*პირადი კაბინეტი*/
+.profileBlock{
+    background: tomato;
+
+}
+.personalData{
+    margin-bottom: 20px;
+    width: 60%;
+    background: gray;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}

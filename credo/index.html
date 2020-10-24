@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TestWork</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>სატესტო დავალება</h1>
+        <br>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="loginBlock col-sm-6">
+                <h3>ავტორიზაცია</h3>
+                <form class="loginForm">
+                    <div class="form-group">
+                        <label for="usr"><span>* </span>მომხმარებელი:</label>
+                        <input type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd"><span>* </span>პაროლი:</label>
+                        <input type="password" class="form-control" id="pwd" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="loginBtn" class="btn btn-info">სისტემაში შესვლა</button>
+                    </div>
+                </form>
+            </div>
+            <div class="registerBlock col-sm-6">
+                <h3>რეგისტრაცია</h3>
+                <form class="registerForm">
+                    <div class="form-group">
+                        <label for="fullname">სახელი გვარი:</label>
+                        <input type="text" class="form-control" id="fullname">
+                    </div>
+                    <div class="form-group">
+                        <label for="user"><span>* </span>მომხმარებელი:</label>
+                        <input type="text" class="form-control" id="user">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd_1"><span>* </span>პაროლი:</label>
+                        <input type="password" class="form-control" id="pwd_1" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd_2"><span>* </span>პაროლის განმეორება:</label>
+                        <input type="password" class="form-control" id="pwd_2" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="avatar">ავატარი (ფოტო):</label>
+                        <input type="file" class="form-control" id="avatar" onchange="convertToBase64(this);">
+                        <input type="hidden" id="base64img" >
+                    </div>
+                    <div class="form-group">
+                        <button id="registerBtn" type="button" class="btn btn-info">რეგისტრაცია</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
